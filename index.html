@@ -64,16 +64,18 @@
             background-color: #fff;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 4px 40px rgb(8, 254, 69); /* Sky blue shadow */
-            transition: transform 0.3s ease;
-}
-
-            
-        
+            margin-bottom: 20px;
+            box-shadow:  0 4px 40px rgb(8, 254, 69);;
+            flex: 1;
+            min-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
         .project-card:hover {
             transform: translateY(-10px);
-            /* color:red; */
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 3);
+            border: 2px solid rgba(15, 25, 230, 3); 
+            border-radius: 8px; 
         }
 
         .project-card h2 {
@@ -135,6 +137,22 @@
         .cta-section a:hover {
             background-color: #29a8cf;
         }
+        /* .scrolling-text {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            animation: move-text 20s linear infinite;
+        }
+
+        @keyframes move-text {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(100%);
+            }
+        } */
     </style>
 </head>
 <body>
@@ -149,7 +167,9 @@
     </header>
 
     <section id="projects">
-        <h1>My Projects</h1>
+        <h1 style="text-align: center; font-size: 30px">My Projects</h1>
+       <h4 class="scrolling-text" style="text-align: center;color: rgb(106, 0, 0);">Please note: The website will take approximately 1 minute to load after clicking 'Show Project'. Kindly wait while the system initializes.</h4>
+     
         <div class="project-grid">
             <!-- Project 1: SMS Spam Detection App -->
             <div class="project-card">
